@@ -3,6 +3,9 @@ import { PropertyCard, Property } from "./PropertyCard";
 import { Button } from "@/components/ui/button";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { MapPin, Filter } from "lucide-react";
+import apartment1 from '@/assets/apartment-1.jpg';
+import apartment2 from '@/assets/apartment-2.jpg';
+import apartment3 from '@/assets/apartment-3.jpg';
 
 interface PropertyGridProps {
   onAddToCart: (property: Property) => void;
@@ -26,7 +29,7 @@ export const PropertyGrid = ({ onAddToCart }: PropertyGridProps) => {
       parking: 2,
       description: "Majestuoso departamento con ubicación estratégica a solo pasos del C.C. Unicentro. Planta eléctrica 100%, vigilancia 24/7 y conectado a pozo.",
       features: ["Planta eléctrica 100%", "2 habitaciones con baño", "Balcón", "Cocina moderna", "Vigilancia 24/7", "2 estacionamientos"],
-      image: "/src/assets/apartment-1.jpg"
+      image: apartment1
     },
     {
       id: "2", 
@@ -41,7 +44,7 @@ export const PropertyGrid = ({ onAddToCart }: PropertyGridProps) => {
       parking: 1,
       description: "Departamento ubicado en residencias Luna, completamente equipado con 3 aires acondicionados y terraza con parrillera en áreas comunes.",
       features: ["Cocina termoformada equipada", "3 aires acondicionados", "Lavadora y secadora", "Planta eléctrica áreas comunes", "Terraza con parrillera"],
-      image: "/src/assets/apartment-2.jpg"
+      image: apartment2
     },
     {
       id: "3",
@@ -56,7 +59,7 @@ export const PropertyGrid = ({ onAddToCart }: PropertyGridProps) => {
       parking: 1,
       description: "Acogedor apartamento completamente amoblado, ideal para familias. Incluye piscina, parque infantil y áreas comunes.",
       features: ["Completamente amoblado", "Piscina", "Parque infantil", "Vigilancia 24/7", "Áreas comunes", "Listo para mudarse"],
-      image: "/src/assets/apartment-3.jpg"
+      image: apartment3
     }
   ];
 
